@@ -1,0 +1,36 @@
+entity Comercios {
+	id Long,
+	comerciosName String
+}
+
+entity PV {
+	id Long,
+	pvNumero String,
+    idComercio Long
+}
+
+entity Trxs {
+	pvData String,
+    idPV Long
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	PV{idComercio} to Comercios
+}
+relationship OneToMany {
+	Trxs{idPV} to PV
+}
+
+
+// Set pagination options
+paginate Comercios with infinite-scroll
+paginate PV with pagination
+paginate Trxs with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with mySuffix
