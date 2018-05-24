@@ -1,0 +1,32 @@
+
+<div *ngIf="comercios">
+    <h2><span jhiTranslate="mVtasApp.comercios.detail.title">Comercios</span> {{comercios.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="mVtasApp.comercios.comerciosName">Comercios Name</span></dt>
+        <dd>
+            <span>{{comercios.comerciosName}}</span>
+        </dd>
+        <dt><span jhiTranslate="mVtasApp.comercios.pV">P V</span></dt>
+        <dd>
+            <div *ngIf="comercios.pVId">
+                <a [routerLink]="['/pv-my-suffix', comercios.pVId]">{{comercios.pVId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'comercios-my-suffix/'+ comercios.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

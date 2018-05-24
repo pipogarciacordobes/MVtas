@@ -1,0 +1,23 @@
+
+{
+    "mVtasApp": {
+        "comercios" : {
+            "home": {
+                "title": "Comercios",
+                "createLabel": "Crear nuevo Comercios",
+                "createOrEditLabel": "Crear o editar Comercios"
+            },
+            "created": "Un nuevo Comercios ha sido creado con el identificador {{ param }}",
+            "updated": "Un Comercios ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Comercios ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Comercios {{ id }}?"
+            },
+            "detail": {
+                "title": "Comercios"
+            },
+            "comerciosName": "Comercios Name",
+            "pV": "P V"
+        }
+    }
+}

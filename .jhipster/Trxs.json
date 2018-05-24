@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "idPV",
+            "otherEntityName": "pV",
+            "otherEntityRelationshipName": "trxs"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "pvData",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idPV",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20180524200152",
+    "entityTableName": "trxs",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix"
+}
