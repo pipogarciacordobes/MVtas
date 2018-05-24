@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "idComercio",
+            "otherEntityName": "comercios",
+            "otherEntityRelationshipName": "pV"
+        },
+        {
+            "relationshipName": "trxs",
+            "otherEntityName": "trxs",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "pvNumero",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idComercio",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20180524200151",
+    "entityTableName": "pv",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix"
+}

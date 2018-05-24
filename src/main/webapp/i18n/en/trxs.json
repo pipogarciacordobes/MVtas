@@ -1,0 +1,24 @@
+
+{
+    "mVtasApp": {
+        "trxs" : {
+            "home": {
+                "title": "Trxs",
+                "createLabel": "Create a new Trxs",
+                "createOrEditLabel": "Create or edit a Trxs"
+            },
+            "created": "A new Trxs is created with identifier {{ param }}",
+            "updated": "A Trxs is updated with identifier {{ param }}",
+            "deleted": "A Trxs is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Trxs {{ id }}?"
+            },
+            "detail": {
+                "title": "Trxs"
+            },
+            "pvData": "Pv Data",
+            "idPV": "Id PV",
+            "idPV": "Id PV"
+        }
+    }
+}

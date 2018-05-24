@@ -1,0 +1,25 @@
+
+{
+    "mVtasApp": {
+        "pV" : {
+            "home": {
+                "title": "PVS",
+                "createLabel": "Create a new PV",
+                "createOrEditLabel": "Create or edit a PV"
+            },
+            "created": "A new PV is created with identifier {{ param }}",
+            "updated": "A PV is updated with identifier {{ param }}",
+            "deleted": "A PV is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete PV {{ id }}?"
+            },
+            "detail": {
+                "title": "PV"
+            },
+            "pvNumero": "Pv Numero",
+            "idComercio": "Id Comercio",
+            "idComercio": "Id Comercio",
+            "trxs": "Trxs"
+        }
+    }
+}
